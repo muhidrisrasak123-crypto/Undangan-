@@ -1,0 +1,1710 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Undangan Pernikahan | Budi & Sri</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* ================================
+   RESET
+================================ */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #f9e9e8;
+            color: #706f65;
+            overflow-x: hidden;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            color: #80636a;
+        }
+
+        h1 {
+            font-size: clamp(55px, 14vw, 90px);
+            line-height: .9;
+        }
+
+        h2 {
+            font-size: clamp(38px, 9vw, 52px);
+            margin: 15px 0;
+        }
+
+        h3 {
+            font-size: 30px;
+        }
+
+        p {
+            color: #887979;
+            font-size: 13px;
+            line-height: 2;
+        }
+
+        .subtitle {
+            color: #8da17d;
+            font-size: 10px;
+            letter-spacing: 4px;
+        }
+
+        .ornament {
+            color: #a7b89b;
+            font-size: 32px;
+            margin: 15px 0;
+        }
+
+
+        /* ================================
+   PEMBUKA
+================================ */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background:
+                radial-gradient(circle at 10% 15%,
+                    rgba(211, 225, 198, .8),
+                    transparent 25%),
+                radial-gradient(circle at 90% 85%,
+                    rgba(242, 199, 205, .8),
+                    transparent 30%),
+                #f9e9e8;
+        }
+
+        .NamaSribu {
+            font-family: 'Dancing Script', cursive;
+            font-size: 400%;
+        }
+
+
+        .hero-content {
+            width: min(100%, 600px);
+            animation: fadeUp 1.2s ease;
+        }
+
+        .hero-photo {
+            width: min(100%, 370px);
+            height: 470px;
+
+            object-fit: cover;
+
+            border-radius:
+                190px 190px 25px 25px;
+
+            margin: 30px auto;
+
+            display: block;
+
+            border: 7px solid rgba(255, 255, 255, .7);
+
+            box-shadow:
+                0 20px 50px rgba(125, 105, 105, .15);
+        }
+
+        .hero-quote {
+            max-width: 420px;
+            margin: 25px auto;
+
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 24px;
+            font-style: italic;
+            color: #806b70;
+        }
+
+
+        /* ================================
+   AYAT AL-QURAN
+================================ */
+
+        .quran {
+            background: #e9efdf;
+        }
+
+        .quran-box {
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .arabic {
+            direction: rtl;
+
+            font-family: 'Amiri', serif;
+
+            font-size: clamp(25px, 5vw, 34px);
+
+            line-height: 2.2;
+
+            color: #66765c;
+
+            max-width: 800px;
+
+            margin: 30px auto;
+        }
+
+        .translation {
+            max-width: 600px;
+
+            margin: 25px auto;
+
+            font-family: 'Cormorant Garamond', serif;
+
+            font-size: 21px;
+
+            line-height: 1.6;
+
+            font-style: italic;
+        }
+
+        .source {
+            color: #8da17d;
+            font-size: 12px;
+        }
+
+
+        /* ================================
+   PROFIL MEMPELAI
+================================ */
+
+        .profile {
+            background: #fff8f4;
+        }
+
+        .profile-intro {
+            max-width: 550px;
+            margin: 0 auto 40px;
+        }
+
+        .profile-container {
+            max-width: 900px;
+
+            margin: auto;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 35px;
+
+            flex-wrap: wrap;
+        }
+
+        .person {
+            width: min(100%, 350px);
+            padding: 20px;
+        }
+
+        .person-photo {
+            width: 210px;
+            height: 210px;
+
+            object-fit: cover;
+
+            border-radius: 50%;
+
+            border: 7px solid #e6ecdd;
+
+            box-shadow:
+                0 10px 30px rgba(100, 100, 80, .12);
+        }
+
+        .person h3 {
+            margin-top: 20px;
+        }
+
+        .person-role {
+            color: #91a184;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            margin: 8px 0 12px;
+        }
+
+
+        /* ================================
+   FOTO BERSAMA
+================================ */
+
+        .together {
+            background: #f9e9e8;
+        }
+
+        .together-photo {
+            width: min(100%, 700px);
+
+            height: 450px;
+
+            object-fit: cover;
+
+            display: block;
+
+            margin: 35px auto 25px;
+
+            border-radius: 30px;
+
+            border: 7px solid rgba(255, 255, 255, .75);
+
+            box-shadow:
+                0 20px 50px rgba(120, 100, 100, .15);
+        }
+
+        .together-caption {
+            max-width: 550px;
+            margin: auto;
+
+            font-family: 'Cormorant Garamond', serif;
+
+            font-size: 22px;
+
+            font-style: italic;
+        }
+
+
+        /* ================================
+   ACARA
+================================ */
+
+        .event {
+            background: #e9efdf;
+        }
+
+        .event-intro {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .events-wrapper {
+            max-width: 950px;
+
+            margin: 40px auto 0;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .event-card {
+            width: min(100%, 420px);
+
+            padding: 40px 25px;
+
+            background: #fffaf7;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 15px 40px rgba(120, 100, 100, .08);
+        }
+
+        .event-card.full {
+            width: min(100%, 650px);
+        }
+
+        .event-icon {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .event-card h3 {
+            margin-bottom: 18px;
+        }
+
+        .event-label {
+            color: #91a184;
+
+            font-size: 10px;
+
+            letter-spacing: 2px;
+
+            margin-top: 15px;
+        }
+
+        .event-info {
+            font-size: 13px;
+
+            color: #776e6d;
+
+            line-height: 1.9;
+        }
+
+        .map-btn {
+            display: inline-block;
+
+            margin-top: 25px;
+
+            padding: 13px 25px;
+
+            border-radius: 50px;
+
+            background: #8da17d;
+
+            color: white;
+
+            text-decoration: none;
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            transition: .3s;
+        }
+
+        .map-btn:hover {
+            background: #748a67;
+            transform: translateY(-3px);
+        }
+
+
+        /* ================================
+   UCAPAN
+================================ */
+
+        .wishes {
+            background: #fff8f4;
+        }
+
+        .wish-intro {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        .wish-form {
+            max-width: 550px;
+
+            margin: 35px auto;
+
+            text-align: left;
+
+            background: #edf1e7;
+
+            padding: 30px;
+
+            border-radius: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-group label {
+            display: block;
+
+            margin-bottom: 7px;
+
+            color: #76686a;
+
+            font-size: 11px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+
+            width: 100%;
+
+            padding: 14px;
+
+            border-radius: 12px;
+
+            border: 1px solid #d8ddd0;
+
+            outline: none;
+
+            background: #fffdfb;
+
+            color: #706967;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 12px;
+        }
+
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+
+            border: none;
+
+            padding: 15px;
+
+            border-radius: 50px;
+
+            background: #8da17d;
+
+            color: white;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 10px;
+
+            letter-spacing: 1.5px;
+
+            cursor: pointer;
+        }
+
+        .wish-list {
+            max-width: 550px;
+            margin: 25px auto;
+            text-align: left;
+        }
+
+        .wish-item {
+            background: #edf1e7;
+
+            padding: 18px;
+
+            border-radius: 15px;
+
+            margin-bottom: 12px;
+
+            border-left: 4px solid #a9b99e;
+        }
+
+        .wish-item strong {
+            font-size: 12px;
+            color: #80636a;
+        }
+
+        .wish-item p {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+
+        .attendance {
+            color: #91a184;
+            font-size: 10px;
+            margin-left: 5px;
+        }
+
+
+        /* ================================
+   KADO
+================================ */
+
+        .gift {
+            background: #f9e9e8;
+        }
+
+        .gift-intro {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        .gift-wrapper {
+            max-width: 850px;
+
+            margin: 35px auto;
+
+            display: flex;
+
+            justify-content: center;
+
+            gap: 25px;
+
+            flex-wrap: wrap;
+        }
+
+        .gift-card {
+            width: min(100%, 400px);
+
+            padding: 35px 25px;
+
+            background: #fffaf7;
+
+            border-radius: 25px;
+
+            box-shadow:
+                0 12px 30px rgba(120, 100, 100, .08);
+        }
+
+        .gift-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .gift-card h3 {
+            margin-bottom: 18px;
+        }
+
+        .account-box {
+            background: #edf1e7;
+
+            padding: 20px;
+
+            border-radius: 16px;
+
+            margin-top: 15px;
+        }
+
+        .account-title {
+            font-size: 10px;
+
+            color: #91a184;
+
+            letter-spacing: 1px;
+
+            margin-top: 8px;
+        }
+
+        .account-number {
+            font-size: 18px;
+
+            font-weight: 600;
+
+            color: #80636a;
+
+            margin: 5px 0;
+        }
+
+        .copy-btn {
+            border: none;
+
+            padding: 11px 20px;
+
+            border-radius: 50px;
+
+            background: #8da17d;
+
+            color: white;
+
+            cursor: pointer;
+
+            font-size: 10px;
+
+            margin-top: 12px;
+        }
+
+        .address {
+            font-size: 12px;
+
+            line-height: 1.8;
+
+            color: #776e6d;
+
+            margin-top: 8px;
+        }
+
+
+        /* ================================
+   PENUTUP
+================================ */
+
+        .closing {
+            background:
+                linear-gradient(rgba(233, 239, 223, .9),
+                    rgba(249, 233, 232, .95));
+        }
+
+        .closing-content {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        .closing-message {
+            font-family: 'Cormorant Garamond', serif;
+
+            font-size: 23px;
+
+            font-style: italic;
+
+            color: #806b70;
+
+            margin: 25px auto;
+        }
+
+        .closing-names {
+            font-size: 50px;
+            margin: 25px 0;
+        }
+
+        footer {
+            padding: 25px;
+
+            background: #dfe7d8;
+
+            text-align: center;
+
+            color: #718065;
+
+            font-size: 9px;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* ================================
+   ANIMASI
+================================ */
+
+        @keyframes fadeUp {
+
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+        }
+
+
+        /* ================================
+   MOBILE
+================================ */
+
+        @media(max-width:600px) {
+
+            section {
+                padding: 65px 17px;
+            }
+
+            .hero-photo {
+                height: 430px;
+
+                border-radius:
+                    170px 170px 20px 20px;
+            }
+
+            .person-photo {
+                width: 190px;
+                height: 190px;
+            }
+
+            .together-photo {
+                height: 380px;
+            }
+
+            .event-card {
+                padding: 32px 18px;
+            }
+
+            .wish-form {
+                padding: 22px 17px;
+            }
+
+            .gift-card {
+                padding: 30px 18px;
+            }
+
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+     1. PEMBUKA
+===================================================== -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <div class="subtitle">
+                BISMILLAHIRRAHMANIRRAHIM
+            </div>
+
+            <div class="ornament">
+                ❦
+            </div>
+
+            <p>
+                Assalamu'alaikum Warahmatullahi Wabarakatuh
+            </p>
+
+            <h1 class="NamaSribu">
+                BUDI
+                <br>
+                <span style="color:#9aaa8b;">
+                    &
+                </span>
+                <br>
+                SUCJI
+            </h1>
+
+
+            <!-- FOTO 1 -->
+
+            <img src="WhatsApp Image 2026-09-19 at 19.29.49.jpeg" alt="Budi dan Sri" class="hero-photo">
+
+
+            <p class="hero-quote">
+                "Dengan menyebut nama Allah,
+                kami memulai perjalanan cinta
+                menuju kehidupan yang penuh berkah."
+            </p>
+
+            <div class="ornament">
+                ❦
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     2. AYAT AL-QURAN
+===================================================== -->
+
+    <section class="quran">
+
+        <div class="quran-box">
+
+            <div class="subtitle">
+                OUR BLESSING
+            </div>
+
+            <h2>
+                Ayat Pernikahan
+            </h2>
+
+            <div class="ornament">
+                ❦
+            </div>
+
+
+            <p class="arabic">
+
+                وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم
+                مِّنْ أَنفُسِكُمْ أَزْوَاجًا
+                لِّتَسْكُنُوا إِلَيْهَا
+                وَجَعَلَ بَيْنَكُم مَّوَدَّةً
+                وَرَحْمَةً
+
+            </p>
+
+
+            <p class="translation">
+
+                "Dan di antara tanda-tanda
+                (kebesaran)-Nya ialah Dia menciptakan
+                pasangan-pasangan untukmu dari jenismu
+                sendiri, agar kamu cenderung dan merasa
+                tenteram kepadanya, dan Dia menjadikan
+                di antaramu rasa kasih dan sayang."
+
+            </p>
+
+
+            <p class="source">
+                QS. Ar-Rum : 21
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     3. PROFIL MEMPELAI
+===================================================== -->
+
+    <section class="profile">
+
+        <div class="subtitle">
+            THE BRIDE & GROOM
+        </div>
+
+        <h2>
+            Mempelai
+        </h2>
+
+        <div class="ornament">
+            ❦
+        </div>
+
+
+        <div class="profile-intro">
+
+            <p>
+                Dengan memohon rahmat dan ridha Allah SWT,
+                kami bermaksud menyempurnakan ibadah
+                dalam ikatan pernikahan.
+            </p>
+
+        </div>
+
+
+        <div class="profile-container">
+
+
+            <!-- BUDI -->
+
+            <div class="person">
+                <!-- FOTO 2 -->
+                <br>
+                <img src="budi (2).jpeg" alt="Pratu Budi Reynaldi. R" class="person-photo">
+
+                <h3>
+                    Pratu Budi Reynaldi. R
+                </h3>
+
+                <div class="person-role">
+                    MEMPELAI PRIA
+                </div>
+
+                <p>
+                    Putra dari Sertu Purn. Romansyah dan Ibu St. Sariyati
+                </p>
+
+            </div>
+
+
+            <!-- SRI -->
+
+            <div class="person">
+                <div class="ornament">
+
+                    <img src="budi (1).jpeg" alt="Sri Sucjiati Rasak, S.S." class="person-photo">
+
+                </div>
+
+                <h3>
+                    Sri Sucjiati Rasak, S.S.
+                </h3>
+
+                <div class="person-role">
+                    MEMPELAI WANITA
+                </div>
+
+                <p>
+                    Putri dari Peltu Purn. Sakrianto dan Ibu Ramlah Nur
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     4. FOTO BERSAMA
+===================================================== -->
+
+    <section class="together">
+
+        <div class="subtitle">
+            OUR SPECIAL MOMENT
+        </div>
+
+        <h2>
+            Budi & Sri
+        </h2>
+
+        <div class="ornament">
+            ❦
+        </div>
+
+
+        <!-- FOTO 3: FOTO BERSAMA -->
+
+        <img src="pop.jpeg" alt="Foto bersama Budi dan Sri" class="together-photo">
+
+
+        <p class="together-caption">
+            "Dua hati, satu tujuan,
+            dan satu perjalanan menuju
+            kehidupan yang penuh keberkahan."
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     5. AKAD NIKAH
+===================================================== -->
+
+    <section class="event">
+
+        <div class="event-intro">
+
+            <div class="subtitle">
+                THE SACRED MOMENT
+            </div>
+
+            <h2>
+                Akad Nikah
+            </h2>
+
+            <div class="ornament">
+                ❦
+            </div>
+
+            <p>
+                Dengan memohon rahmat dan ridha Allah SWT,
+                kami akan melangsungkan akad nikah
+                sebagai awal dari perjalanan kehidupan
+                kami sebagai pasangan suami istri.
+            </p>
+
+        </div>
+
+
+        <div class="events-wrapper">
+
+
+            <div class="event-card full">
+
+                <div class="event-icon">
+                    💍
+                </div>
+
+                <div class="subtitle">
+                    AKAD NIKAH
+                </div>
+
+                <h3>
+                    Budi & Sucji
+                </h3>
+
+
+                <div class="event-label">
+                    HARI & TANGGAL
+                </div>
+
+                <p class="event-info">
+                    Sabtu, 10 Oktober 2026
+                </p>
+
+
+                <div class="event-label">
+                    WAKTU
+                </div>
+
+                <p class="event-info">
+                    10.00 WITA - Selesai
+                </p>
+
+
+                <div class="event-label">
+                    TEMPAT
+                </div>
+
+                <p class="event-info">
+                    Bertempat di Bancee Samping Asrama Dodiklatpur<br>
+                    Alamat lengkap lokasi akad
+                </p>
+
+
+                <a href="https://maps.app.goo.gl/4fAu4vfo2HxHaGxW9" target="_blank" class="map-btn">
+                    📍 LIHAT LOKASI AKAD
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     6. DUA RESEPSI
+===================================================== -->
+
+    <section class="event">
+
+        <div class="event-intro">
+
+            <div class="subtitle">
+                WEDDING RECEPTION
+            </div>
+
+            <h2>
+                Resepsi Pernikahan
+            </h2>
+
+            <div class="ornament">
+                ❦
+            </div>
+
+            <p>
+                Setelah akad nikah, kami akan melangsungkan
+                dua acara resepsi bersama keluarga dan
+                orang-orang terkasih.
+            </p>
+
+        </div>
+
+
+        <div class="events-wrapper">
+
+
+            <!-- RESEPSI WANITA -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🌸
+                </div>
+
+                <div class="subtitle">
+                    ACARA
+                </div>
+
+                <h3>
+                    Resepsi Mempelai Wanita
+                </h3>
+
+
+                <div class="event-label">
+                    HARI & TANGGAL
+                </div>
+
+                <p class="event-info">
+                    Sabtu, 10 Oktober 2026
+                </p>
+
+
+                <div class="event-label">
+                    WAKTU
+                </div>
+
+                <p class="event-info">
+                    10.00 WITA - Selesai
+                </p>
+
+
+                <div class="event-label">
+                    TEMPAT
+                </div>
+
+                <p class="event-info">
+                    Bertempat di Bancee Samping Asrama Dodiklatpur<br>
+                    Alamat lengkap lokasi acara
+                </p>
+
+
+                <a href="https://maps.app.goo.gl/4fAu4vfo2HxHaGxW9" target="_blank" class="map-btn">
+                    📍 LIHAT LOKASI
+                </a>
+
+            </div>
+
+
+
+            <!-- RESEPSI PRIA -->
+
+            <div class="event-card">
+
+                <div class="event-icon">
+                    🌿
+                </div>
+
+                <div class="subtitle">
+                    ACARA
+                </div>
+
+                <h3>
+                    Resepsi Mempelai Pria
+                </h3>
+
+
+                <div class="event-label">
+                    HARI & TANGGAL
+                </div>
+
+                <p class="event-info">
+                    Minggu, 00 Januari 2027
+                </p>
+
+
+                <div class="event-label">
+                    WAKTU
+                </div>
+
+                <p class="event-info">
+                    19.00 WITA - Selesai
+                </p>
+
+
+                <div class="event-label">
+                    TEMPAT
+                </div>
+
+                <p class="event-info">
+                    BTN Bone Biru Indah Permai Blok B3/50 Jl. A. Malla, Kec. Tanete Riattang, Kab Bone<br>
+                    Alamat lengkap lokasi acara
+                </p>
+
+
+                <a href="https://maps.app.goo.gl/CQu5Dr5WvRqwMsqX7" target="_blank" class="map-btn">
+                    📍 LIHAT LOKASI
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     7. UCAPAN & RSVP
+===================================================== -->
+
+    <section class="wishes">
+
+        <div class="wish-intro">
+
+            <div class="subtitle">
+                YOUR WISHES
+            </div>
+
+            <h2>
+                Ucapan & Doa
+            </h2>
+
+            <div class="ornament">
+                ❦
+            </div>
+
+            <p>
+                Kehadiran dan doa restu Anda merupakan
+                kebahagiaan bagi kami. Silakan tinggalkan
+                ucapan dan doa terbaik untuk kami.
+            </p>
+
+        </div>
+
+
+        <form class="wish-form" id="wishForm">
+
+
+            <div class="form-group">
+
+                <label for="guestName">
+                    Nama
+                </label>
+
+                <input type="text" id="guestName" placeholder="Masukkan nama Anda" required>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="attendance">
+                    Konfirmasi Kehadiran
+                </label>
+
+                <select id="attendance" required>
+
+                    <option value="">
+                        Pilih konfirmasi
+                    </option>
+
+                    <option value="Hadir">
+                        InsyaAllah Hadir
+                    </option>
+
+                    <option value="Tidak Hadir">
+                        Mohon Maaf Tidak Dapat Hadir
+                    </option>
+
+                    <option value="Masih Ragu">
+                        Masih Ragu
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="wishMessage">
+                    Ucapan & Doa
+                </label>
+
+                <textarea id="wishMessage" placeholder="Tuliskan ucapan dan doa terbaik..." required></textarea>
+
+            </div>
+
+
+            <button type="submit" class="submit-btn">
+                💌 KIRIM UCAPAN
+            </button>
+
+        </form>
+
+
+        <div class="wish-list" id="wishList"></div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     8. KIRIM KADO
+===================================================== -->
+
+    <section class="gift">
+
+        <div class="gift-intro">
+
+            <div class="subtitle">
+                WEDDING GIFT
+            </div>
+
+            <h2>
+                Kirim Kado
+            </h2>
+
+            <div class="ornament">
+                🎁
+            </div>
+
+            <p>
+                Doa restu Anda merupakan hadiah terindah
+                bagi kami. Bagi yang ingin memberikan
+                tanda kasih, dapat menggunakan pilihan
+                berikut.
+            </p>
+
+        </div>
+
+
+        <div class="gift-wrapper">
+
+
+            <!-- TRANSFER -->
+
+            <div class="gift-card">
+
+                <div class="gift-icon">
+                    💳
+                </div>
+
+                <h3>
+                    Transfer Digital
+                </h3>
+
+                <p>
+                    Silakan gunakan informasi rekening
+                    berikut untuk memberikan tanda kasih.
+                </p>
+
+
+                <div class="account-box">
+
+                    <div class="account-title">
+                        BANK
+                    </div>
+
+                    <p>
+                        <strong id="bankName">
+                            BANK BRI
+                        </strong>
+                    </p>
+
+
+                    <div class="account-title">
+                        NOMOR REKENING
+                    </div>
+
+                    <div class="account-number" id="accountNumber">
+                        341901038827539
+                    </div>
+
+
+                    <div class="account-title">
+                        SRI SUCJIATI RASAK
+                    </div>
+
+                    <p>
+                        <strong>
+                            BUDI & SUCJI
+                        </strong>
+                    </p>
+
+
+                    <button class="copy-btn" onclick="copyAccount()">
+                        SALIN NOMOR REKENING
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- KADO FISIK -->
+
+            <div class="gift-card">
+
+                <div class="gift-icon">
+                    📦
+                </div>
+
+                <h3>
+                    Kado Fisik
+                </h3>
+
+                <p>
+                    Bagi yang ingin mengirimkan kado
+                    secara langsung, dapat dikirimkan
+                    ke alamat berikut.
+                </p>
+
+
+                <div class="account-box">
+
+                    <div class="account-title">
+                        PENERIMA
+                    </div>
+
+                    <p>
+                        <strong>
+                            BUDI & SUCJI
+                        </strong>
+                    </p>
+
+
+                    <div class="account-title">
+                        ALAMAT
+                    </div>
+
+                    <p class="address" id="shippingAddress">
+                        Bancee di Samping Asrama Dodiklatpur (90563)
+                    </p>
+
+
+                    <button class="copy-btn" onclick="copyAddress()">
+                        SALIN ALAMAT
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+     9. PENUTUP
+===================================================== -->
+
+    <section class="closing">
+
+        <div class="closing-content">
+
+            <div class="ornament">
+                ❦
+            </div>
+
+            <div class="subtitle">
+                TERIMA KASIH
+            </div>
+
+            <h2>
+                Jazakumullahu Khairan
+            </h2>
+
+
+            <p class="closing-message">
+                "Semoga Allah memberikan keberkahan
+                dalam pernikahan kami, menyatukan kami
+                dalam kebaikan, serta menjadikan keluarga
+                kami keluarga yang sakinah, mawaddah,
+                warahmah."
+            </p>
+
+
+            <p>
+                Merupakan suatu kehormatan dan kebahagiaan
+                bagi kami apabila Bapak/Ibu/Saudara/i
+                berkenan hadir dan memberikan doa restu.
+            </p>
+
+
+            <h1 class="closing-names">
+
+                BUDI
+
+                <span style="color:#9aaa8b;">
+                    &
+                </span>
+
+                SUCJI
+
+            </h1>
+
+
+            <p>
+                Wassalamu'alaikum Warahmatullahi Wabarakatuh
+            </p>
+
+
+            <div class="ornament">
+                ❦
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <footer>
+
+        BUDI & SUCJI
+        <br>
+        © 2026 — With Love
+
+    </footer>
+
+
+
+    <!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+    <script>
+
+
+        /* =====================================
+           UCAPAN
+        ===================================== */
+
+        const wishForm =
+            document.getElementById("wishForm");
+
+        const wishList =
+            document.getElementById("wishList");
+
+
+        wishForm.addEventListener(
+            "submit",
+            function (event) {
+
+                event.preventDefault();
+
+
+                const name =
+                    document
+                        .getElementById("guestName")
+                        .value
+                        .trim();
+
+
+                const attendance =
+                    document
+                        .getElementById("attendance")
+                        .value;
+
+
+                const message =
+                    document
+                        .getElementById("wishMessage")
+                        .value
+                        .trim();
+
+
+                if (
+                    !name ||
+                    !attendance ||
+                    !message
+                ) {
+
+                    alert(
+                        "Mohon lengkapi semua data terlebih dahulu."
+                    );
+
+                    return;
+                }
+
+
+                const wishItem =
+                    document.createElement("div");
+
+                wishItem.className =
+                    "wish-item";
+
+
+                const strong =
+                    document.createElement("strong");
+
+                strong.textContent =
+                    name;
+
+
+                const attendanceText =
+                    document.createElement("span");
+
+                attendanceText.className =
+                    "attendance";
+
+                attendanceText.textContent =
+                    "• " + attendance;
+
+
+                const paragraph =
+                    document.createElement("p");
+
+                paragraph.textContent =
+                    message;
+
+
+                strong.appendChild(
+                    attendanceText
+                );
+
+
+                wishItem.appendChild(
+                    strong
+                );
+
+                wishItem.appendChild(
+                    paragraph
+                );
+
+
+                wishList.prepend(
+                    wishItem
+                );
+
+
+                wishForm.reset();
+
+
+                alert(
+                    "Terima kasih atas ucapan dan doanya ❤️"
+                );
+
+            }
+        );
+
+
+        /* =====================================
+           SALIN REKENING
+        ===================================== */
+
+        function copyAccount() {
+
+            const account =
+                document
+                    .getElementById("accountNumber")
+                    .textContent
+                    .trim();
+
+
+            navigator.clipboard
+                .writeText(account)
+                .then(function () {
+
+                    alert(
+                        "Nomor rekening berhasil disalin."
+                    );
+
+                })
+                .catch(function () {
+
+                    alert(
+                        "Gagal menyalin nomor rekening."
+                    );
+
+                });
+
+        }
+
+
+        /* =====================================
+           SALIN ALAMAT
+        ===================================== */
+
+        function copyAddress() {
+
+            const address =
+                document
+                    .getElementById("shippingAddress")
+                    .innerText
+                    .trim();
+
+
+            navigator.clipboard
+                .writeText(address)
+                .then(function () {
+
+                    alert(
+                        "Alamat berhasil disalin."
+                    );
+
+                })
+                .catch(function () {
+
+                    alert(
+                        "Gagal menyalin alamat."
+                    );
+
+                });
+
+        }
+
+    </script>
+
+</body>
+
+</html>
+```
+
+```
